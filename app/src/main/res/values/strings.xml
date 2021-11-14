@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Aditya Yadav</string>
+    <string name="star_image">Star Image</string>
+    <string name="bio_text" >Add a ScrollView with a TextView showing information about yourself to the layout.
+
+    Style the TextView with NameStyle, and add additional styling to separate the scrollable text from the edges of the screen.
+    Add some spacing between the lines using the lineSpacingMultiplier property to the TextView.
+    Add a ScrollView with a TextView showing information about yourself to the layout.
+Style the TextView with NameStyle, and add additional styling to separate the scrollable text from the edges of the screen.
+Add some spacing between the lines using the lineSpacingMultiplier property to the TextView.
+        Add a ScrollView with a TextView showing information about yourself to the layout.
+Style the TextView with NameStyle, and add additional styling to separate the scrollable text from the edges of the screen.
+Add some spacing between the lines using the lineSpacingMultiplier property to the TextView.Add a ScrollView with a TextView showing information about yourself to the layout.
+Style the TextView with NameStyle, and add additional styling to separate the scrollable text from the edges of the screen.
+Add some spacing between the lines using the lineSpacingMultiplier property to the TextView.
+    </string>
+    <string name="done_button">Done</string>
+    <string name="What_is_your_name">What is your nickname</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/textviewStyle"
+        android:text="@string/name"
+        android:textColor="#9575CD" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        style="@style/textviewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/What_is_your_name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:text="@string/done_button" />
+
+
+    <TextView
+        android:id="@+id/nickname_text"
+        style="@style/textviewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/star_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/star_image"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:id="@+id/bio_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/bio_text"
+            android:textSize="20sp" />
+    </ScrollView>
+
+</LinearLayout>
