@@ -16,10 +16,14 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    //Data class object
+    private val myName: MyName = MyName("Aditya Yadav")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        binding.myName = myName
         //Using binding object to reference doneButton
         binding.doneButton.setOnClickListener {
             addNickname(it)
@@ -31,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         // Using binding.apply() to mske it easier to read
        binding.apply {
-           nicknameText.text = binding.editTextTextPersonName.text
+          myName?.nickname = editTextTextPersonName.text.toString()
            //invalidate all views to recreate views with correct data
            invalidateAll()
            editTextTextPersonName.visibility = View.GONE
